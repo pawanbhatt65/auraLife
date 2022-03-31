@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="This is content description">
+   <meta name="keywords" content="This is content keyword">
+   <meta http-equiv="refresh" content="infinity">
+   <meta name="author" content="Pawan Bhatt">
+   <title>AuraLife</title>
+   <!-- link fontAwesome icons  -->
+   <link rel="stylesheet" href="fonts_icon/icons/all.min.css">
+   <!-- link external css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- link custom css -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <script src="js/api.js" async defer></script>
+</head>
+
+<body>
+   <!-- header  -->
+   <nav class="navbar nav-direction navbar-expand-lg navbar-light bg-light body-gap topBottom fixed-top">
+      <div class="container-fluid mb-md-3 mb-lg-0">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.html">AuraLife</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="auraNavbar">
+               <li class="nav-item">
+                  <a class="nav-link active position-relative nav-open" aria-current="page" href="javascript:void(0)">
+                     Smartphones
+                     <span class="show-icon" onclick="showIcon()"><i class="fas fa-long-arrow-alt-right"></i></span>
+                     <div class="header-phone" id="headerPhone">
+                        <span class="hide-icon" onclick="hideIcon()"><i class="fas fa-times"></i></span>
+                        <div class="header-smart">
+                           <img src="images/aura3_1.png" alt="" class="d-block img-fluid">
+                           <p>Special item 1</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/smartPhone1.png" alt="" class="d-block img-fluid">
+                           <p>Special item 2</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/auraA1.png" alt="" class="d-block img-fluid">
+                           <p>Special item 3</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/aura43E5G.png" alt="" class="d-block img-fluid">
+                           <p>Special item 1</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/smartPhone1.png" alt="" class="d-block img-fluid">
+                           <p>Special item 2</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/aura43E5G.png" alt="" class="d-block img-fluid">
+                           <p>Special item 3</p>
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link tele-link" href="#">
+                     Television
+                     <span class="show-icon" onclick="teleShowIcon()"><i class="fas fa-long-arrow-alt-right"></i></span>
+                     <div class="header-tele" id="television">
+                        <span class="hide-icon" onclick="teleHideIcon()"><i class="fas fa-times"></i></span>
+                        <ul class="header-tele-ul">
+                           <li>lorem1</li>
+                           <li>lorem2</li>
+                           <li>lorem3</li>
+                           <li>lorem4</li>
+                           <li>lorem5</li>
+                           <li>lorem6</li>
+                           <li>lorem7</li>
+                           <li>lorem8</li>
+                           <li>lorem9</li>
+                           <li>lorem10</li>
+                           <li>lorem11</li>
+                        </ul>
+                        <ul class="header-tele-ul">
+                           <li>lorem1</li>
+                           <li>lorem2</li>
+                           <li>lorem3</li>
+                           <li>lorem4</li>
+                           <li>lorem5</li>
+                           <li>lorem6</li>
+                           <li>lorem7</li>
+                           <li>lorem8</li>
+                           <li>lorem9</li>
+                           <li>lorem10</li>
+                           <li>lorem11</li>
+                        </ul>
+                        <ul class="header-tele-ul">
+                           <li>lorem1</li>
+                           <li>lorem2</li>
+                           <li>lorem3</li>
+                           <li>lorem4</li>
+                           <li>lorem5</li>
+                           <li>lorem6</li>
+                           <li>lorem7</li>
+                           <li>lorem8</li>
+                           <li>lorem9</li>
+                           <li>lorem10</li>
+                           <li>lorem11</li>
+                        </ul>
+                     </div>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link laptop-link" href="#">
+                     Laptop & Tablet
+                     <span class="show-icon" onclick="lapShowIcon()"><i class="fas fa-long-arrow-alt-right"></i></span>
+                     <div class="header-laptop" id="lapTop">
+                        <span class="hide-icon" onclick="lapHideIcon()"><i class="fas fa-times"></i></span>
+                        <div class="header-smart">
+                           <img src="images/laptop1.png" alt="" class="d-block img-fluid">
+                           <p>Special item 1</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/laptop2.png" alt="" class="d-block img-fluid">
+                           <p>Special item 2</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/tablet.png" alt="" class="d-block img-fluid">
+                           <p>Special item 3</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/tablet2.png" alt="" class="d-block img-fluid">
+                           <p>Special item 1</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/laptop1.png" alt="" class="d-block img-fluid">
+                           <p>Special item 2</p>
+                        </div>
+                        <div class="header-smart">
+                           <img src="images/tablet2.png" alt="" class="d-block img-fluid">
+                           <p>Special item 3</p>
+                        </div>
+                     </div>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <div class="audio-link">
+                     <a class="nav-link" href="#">Audio</a>
+                     <span class="show-icon" onclick="audioShowIcon()"><i
+                           class="fas fa-long-arrow-alt-right"></i></span>
+                     <div class="header-audio" id="Audio">
+                        <span class="hide-icon" onclick="audioHideIcon()"><i class="fas fa-times"></i></span>
+                        <div class="audio-icon-des">
+                           <h4>Audio</h4>
+                           <div class="au-i-d-list">
+                              <ul class="audio-icon-des-item">
+                                 <li>
+                                    <div class="audio-feature">
+                                       <a class="aura-audio-link" onclick="showAudioTv()">Featured <span><i
+                                                class="fas fa-angle-right"></i></span></a>
+                                       <ul class="audio-tv" id="audioTv">
+                                          <li><span class="hide-icon hide-icon-style" onclick="hideAudioTv()"><i
+                                                   class="fas fa-times"></i></span></li>
+                                          <li><a href="javascript:void(0)">NEP QLED 8K</a></li>
+                                          <li><a href="#">NEP QLED 4K</a></li>
+                                          <li><a href="#">QLED 4K</a></li>
+                                          <li><a href="#">The Frame</a></li>
+                                          <li><a href="#">The Serif</a></li>
+                                          <li><a href="#">The Premiere</a></li>
+                                          <li><a href="#">4K UHD TV</a></li>
+                                          <li><a href="#">Smart TV</a></li>
+                                          <li><a href="#">All about TV</a></li>
+                                          <li><a href="#">The well</a></li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="audio-television">
+                                       <a class="aura-audio-link" onclick="showTelevision()">TVs <span><i
+                                                class="fas fa-angle-right"></i></span></a>
+                                       <ul class="overview" id="overView">
+                                          <li><span class="hide-icon hide-icon-style" onclick="hideTelevision()"><i
+                                                   class="fas fa-times"></i></span></li>
+                                          <li><a href="#">Overview</a></li>
+                                          <li><a href="#">QLED</a></li>
+                                          <li><a href="#">Crystel Led</a></li>
+                                          <li><a href="#">8K TVs</a></li>
+                                          <li><a href="#">4k TVs</a></li>
+                                          <li><a href="#">Full HD / HD TVs</a></li>
+                                          <li><a href="#">Smart TVs</a></li>
+                                          <li><a href="#">See Al TVs</a></li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="audio-frame">
+                                       <a class="aura-audio-link">LifeStyle TVs <span><i
+                                                class="fas fa-angle-right"></i></span></a>
+                                       <ul class="audio-serio">
+                                          <li><a href="#">Overview</a></li>
+                                          <li><a href="#">The Frame</a></li>
+                                          <li><a href="#">The Serio</a></li>
+                                          <li><a href="#">The Serif</a></li>
+                                          <li><a href="#">8K TVs</a></li>
+                                          <li><a href="#">4k TVs</a></li>
+                                          <li><a href="#">Full HD / HD TVs</a></li>
+                                          <li><a href="#">Smart TVs</a></li>
+                                          <li><a href="#">See Al TVs</a></li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="audio-size">
+                                       <a href="#" class="aura-audio-link">TV By Size <span><i
+                                                class="fas fa-angle-right"></i></span></a>
+                                       <ul class="inches">
+                                          <li><a href="#">55-and-above</a></li>
+                                          <li><a href="#">48-54</a></li>
+                                          <li><a href="#">40-47</a></li>
+                                          <li><a href="#">36-39</a></li>
+                                          <li><a href="#">29-35</a></li>
+                                          <li><a href="#">See all</a></li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                                 <li><a href="#">Sound Devicies</a></li>
+                                 <li><a href="#">Crackpacks</a></li>
+                                 <li><a href="#">e-Catalogue</a></li>
+                              </ul>
+                              <div class="">
+                                 <img src="images/tv2.jpg" alt="images" class="img-fluid">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <div class="appliances-link">
+                     <a class="nav-link" href="#">Home Appliances</a>
+                     <span class="show-icon" onclick="applianceShowIcon()"><i
+                           class="fas fa-long-arrow-alt-right"></i></span>
+                     <div class="align-items-start header-appliances" id="homeAppliance">
+                        <span class="hide-icon" onclick="applianceHideIcon()"><i class="fas fa-times"></i></span>
+                        <div class="nav flex-column nav-pills me-0 me-lg-3" id="v-pills-tab" role="tablist"
+                           aria-orientation="vertical">
+                           <button class="nav-link active header-applianc-list" id="v-pills-feature-tab"
+                              data-bs-toggle="pill" data-bs-target="#v-pills-feature" type="button" role="tab"
+                              aria-controls="v-pills-feature" aria-selected="true">Featured</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-bespoke-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-bespoke" type="button" role="tab" aria-controls="v-pills-bespoke"
+                              aria-selected="false">Bespoke</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-refri-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-refri" type="button" role="tab" aria-controls="v-pills-refri"
+                              aria-selected="false">Refrigerator</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-wash-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-wash" type="button" role="tab" aria-controls="v-pills-wash"
+                              aria-selected="false">Washing and
+                              Dryers</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-dress-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-dress" type="button" role="tab" aria-controls="v-pills-dress"
+                              aria-selected="false">Air
+                              Dresser</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-cook-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-cook" type="button" role="tab" aria-controls="v-pills-cook"
+                              aria-selected="false">Cooking
+                              Appliances</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-dish-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-dish" type="button" role="tab" aria-controls="v-pills-dish"
+                              aria-selected="false">Dishwasher</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-conditiner-tab"
+                              data-bs-toggle="pill" data-bs-target="#v-pills-conditiner" type="button" role="tab"
+                              aria-controls="v-pills-conditiner" aria-selected="false">Air
+                              Conditiner</button>
+                           <button class="nav-link header-applianc-list" id="v-pills-purifire-tab" data-bs-toggle="pill"
+                              data-bs-target="#v-pills-purifire" type="button" role="tab"
+                              aria-controls="v-pills-purifire" aria-selected="false">Air
+                              Purifire</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                           <div class="tab-pane fade show active" id="v-pills-feature" role="tabpanel"
+                              aria-labelledby="v-pills-feature-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-bespoke" role="tabpanel"
+                              aria-labelledby="v-pills-bespoke-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-refri" role="tabpanel"
+                              aria-labelledby="v-pills-refri-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-wash" role="tabpanel"
+                              aria-labelledby="v-pills-wash-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-dress" role="tabpanel"
+                              aria-labelledby="v-pills-dress-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-cook" role="tabpanel"
+                              aria-labelledby="v-pills-cook-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-dish" role="tabpanel"
+                              aria-labelledby="v-pills-dish-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-conditiner" role="tabpanel"
+                              aria-labelledby="v-pills-conditiner-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="v-pills-purifire" role="tabpanel"
+                              aria-labelledby="v-pills-purifire-tab">
+                              <div class="feature-tab">
+                                 <ul>
+                                    <li><a href="#">Curd Maestro<sup>TM</sup> Refrigerators</a></li>
+                                    <li><a href="#">Stay home, Stay happy</a></li>
+                                    <li><a href="#">Ecobubble Washer And Dryer</a></li>
+                                    <li><a href="#">Intensive wash<sup>TM</sup> Dishwasher</a></li>
+                                    <li><a href="#">AirDressher</a></li>
+                                    <li><a href="#">Convertible 5 in One AC</a></li>
+                                    <li><a href="#">BASEPOKE Refrigerator</a></li>
+                                    <li><a href="#">Wind Free AC</a></li>
+                                    <li><a href="#">Digi Touch Cool<sup>TM</sup> 5 in 1 Refrigerator</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Smart Life</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navBar">
+               <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+               </li>
+               <li class="nav-item">
+                  <!-----log in and sign up-------->
+                  <div class="log">
+                     <a class="nav-link" href="#">Registration</a>
+                     <div class="log-in">
+                        <ul>
+                           <li><a href="login.html">Log In</a></li>
+                           <li><a href="signup.html">Sign Up</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+            <form class="d-flex position-relative">
+               <input class="form-control d-block d-lg-none ps-5" type="search" placeholder="Search"
+                  aria-label="Search">
+               <button type="submit" class="auraNavButton"><i class="fas fa-search"></i></button>
+            </form>
+         </div>
+      </div>
+   </nav>
+
+
+   <!-- contact -->
+   <section class="contact">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 col-lg-6 mx-auto">
+               <div class="form">
+                  <h3>Contact Form</h3>
+                  <p>Please fill your information and we'll be sending your order in no time.</p>
+                  <form action="#" method="post" name="myForm" onsubmit="validForm()">
+                     <div class="row g-3">
+                        <div class="col-4">
+                           <label for="name">Your Name</label>
+                        </div>
+                        <div class="col-4">
+                           <input type="text" class="form-control form-name" placeholder="first name" name="firstName"
+                              id="name">
+                              <span id="firstName"></span>
+                        </div>
+                        <div class="col-4">
+                           <input type="text" class="form-control form-name" placeholder="last name" name="lastName">
+                           <span id="lastName"></span>
+                        </div>
+                        <div class="col-4">
+                           <label for="mail">Your Email<sup>*</sup></label>
+                        </div>
+                        <div class="col-8">
+                           <input type="email" class="form-control form-name" placeholder="Email" name="email" id=""
+                              required>
+                        </div>
+                        <div class="col-4">
+                           <label for="">Phone<sup>*</sup></label>
+                        </div>
+                        <div class="col-8">
+                           <div class="row">
+                              <div class="col-4">
+                                 <input type="tel" class="form-control form-name" placeholder="###" name="number" id="" minlength="1"
+                                 maxlength="3" size="3" required>
+                              </div>
+                              <div class="col-4">
+                                 <input type="tel" class="form-control form-name" placeholder="####`" name="number" id="" minlength="1"
+                                 maxlength="4" size="4" required>
+                              </div>
+                              <div class="col-4">
+                                 <input type="tel" class="form-control form-name" placeholder="###" name="number" id="" minlength="1"
+                                 maxlength="3" size="3" required>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-4">
+                           <label for="">Message Subject</label>
+                        </div>
+                        <div class="col-8">
+                           <select class="form-select form-name" aria-label="Default select example">
+                              <option value="1">Other</option>
+                              <option value="2">Auto</option>
+                              <option value="3">First</option>
+                              <option value="4">Middle</option>
+                              <option value="5">Last</option>
+                           </select>
+                        </div>
+                        <div class="col-4">
+                           <label for="">Message</label>
+                        </div>
+                        <div class="col-8">
+                           <textarea name="" id="" cols="30" rows="5" class="form-control form-name"></textarea>
+                        </div>
+                        <div class="col-4">
+                           <label for="">Varification</label>
+                        </div>
+                        <div class="col-8">
+                           <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+                        </div>
+                        <hr class="divider">
+                        <input type="submit" value="Submit" class="btn-submit">
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <hr class="divider">
+   <!-------footer---------->
+   <footer class="footer body-gap">
+      <div class="container-fluid">
+         <div class="row gy-5">
+            <div class="col-12 col-sm-4 col-lg-3">
+               <div class="footer-product">
+                  <h4>Product Service</h4>
+                  <ul>
+                     <li><a href="javascript:void(0)">Smartphones</a></li>
+                     <li><a href="javascript:void(0)">Tablets</a></li>
+                     <li><a href="javascript:void(0)">Audio Sound</a></li>
+                     <li><a href="javascript:void(0)">Watches</a></li>
+                     <li><a href="javascript:void(0)">Smart Watches</a></li>
+                     <li><a href="javascript:void(0)">Mobile Accessories</a></li>
+                     <li><a href="javascript:void(0)">TVs</a></li>
+                     <li><a href="javascript:void(0)">Sound Devicies</a></li>
+                     <li><a href="javascript:void(0)">Refrigerator</a></li>
+                     <li><a href="javascript:void(0)">Laundry</a></li>
+                     <li><a href="javascript:void(0)">Air Solution</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-2">
+               <div class="footer-product">
+                  <h4>Lorem ipsum</h4>
+                  <ul>
+                     <li><a href="javascript:void(0)">Smartphones</a></li>
+                     <li><a href="javascript:void(0)">Tablets</a></li>
+                     <li><a href="javascript:void(0)">Audio Sound</a></li>
+                     <li><a href="javascript:void(0)">Watches</a></li>
+                     <li><a href="javascript:void(0)">Smart Watches</a></li>
+                     <li><a href="javascript:void(0)">Mobile Accessories</a></li>
+                     <li><a href="javascript:void(0)">TVs</a></li>
+                     <li><a href="javascript:void(0)">Sound Devicies</a></li>
+                     <li><a href="javascript:void(0)">Refrigerator</a></li>
+                     <li><a href="javascript:void(0)">Laundry</a></li>
+                     <li><a href="javascript:void(0)">Air Solution</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-2">
+               <div class="footer-product">
+                  <h4>Lorem ipsum</h4>
+                  <ul>
+                     <li><a href="javascript:void(0)">Smartphones</a></li>
+                     <li><a href="javascript:void(0)">Tablets</a></li>
+                     <li><a href="javascript:void(0)">Audio Sound</a></li>
+                     <li><a href="javascript:void(0)">Watches</a></li>
+                     <li><a href="javascript:void(0)">Smart Watches</a></li>
+                     <li><a href="javascript:void(0)">Mobile Accessories</a></li>
+                     <li><a href="javascript:void(0)">TVs</a></li>
+                     <li><a href="javascript:void(0)">Sound Devicies</a></li>
+                     <li><a href="javascript:void(0)">Refrigerator</a></li>
+                     <li><a href="javascript:void(0)">Laundry</a></li>
+                     <li><a href="javascript:void(0)">Air Solution</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+               <div class="footer-product">
+                  <h4>Lorem ipsum</h4>
+                  <ul>
+                     <li><a href="javascript:void(0)">Smartphones</a></li>
+                     <li><a href="javascript:void(0)">Tablets</a></li>
+                     <li><a href="javascript:void(0)">Audio Sound</a></li>
+                     <li><a href="javascript:void(0)">Watches</a></li>
+                     <li><a href="javascript:void(0)">Smart Watches</a></li>
+                     <li><a href="javascript:void(0)">Mobile Accessories</a></li>
+                     <li><a href="javascript:void(0)">TVs</a></li>
+                     <li><a href="javascript:void(0)">Sound Devicies</a></li>
+                     <li><a href="javascript:void(0)">Refrigerator</a></li>
+                     <li><a href="javascript:void(0)">Laundry</a></li>
+                     <li><a href="javascript:void(0)">Air Solution</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mx-md-auto mx-lg-0">
+               <div class="footer-product">
+                  <h4>Lorem ipsum</h4>
+                  <div class="call">
+                     <ul class="footer-pro-1">
+                        <li><a href="tel:189003286">189 0032 86</a></li>
+                        <li>9:00-21:00, MON-SUN</li>
+                        <li>Including holidays</li>
+                     </ul>
+                     <ul class="footer-pro-2">
+                        <li><button type="button"><i class="fas fa-headphones-alt"></i> Chat Support</button></li>
+                        <li>9:00-21:00, MON-SUN</li>
+                        <li>Including holidays</li>
+                     </ul>
+                    <div class="position-relative footer-pro-3">
+                     <input type="email" placeholder="Enter Your Email" class="form-control" id="fromInput">
+                     <span for="fromInput">Subscribe</span>
+                    </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12">
+               <div class="footer-bottom">
+                  <p>© 2018-2022 Aura. All Rights Reserved.</p>
+                  <ul class="list-inline">
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                     </li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                     </li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
+                     </li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a>
+                     </li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a>
+                     </li>
+                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script>
+      var phoneIcon = document.getElementById("headerPhone");
+      function hideIcon() {
+         phoneIcon.style.visibility = "hidden";
+      }
+      function showIcon() {
+         phoneIcon.style.visibility = "visible";
+      }
+      var television = document.getElementById("television");
+      function teleHideIcon() {
+         television.style.visibility = "hidden";
+      }
+      function teleShowIcon() {
+         television.style.visibility = "visible";
+      }
+      var laptop = document.getElementById("lapTop");
+      function lapHideIcon() {
+         laptop.style.visibility = "hidden";
+      }
+      function lapShowIcon() {
+         laptop.style.visibility = "visible";
+      }
+      var audio = document.getElementById("Audio");
+      function audioHideIcon() {
+         audio.style.visibility = "hidden";
+      }
+      function audioShowIcon() {
+         audio.style.visibility = "visible";
+      }
+      var audioTv = document.getElementById("audioTv");
+      function hideAudioTv() {
+         audioTv.style.visibility = "hidden";
+      }
+      function showAudioTv() {
+         audioTv.style.visibility = "visible";
+      }
+      let overview = document.getElementById("overView");
+      function hideTelevision() {
+         overview.style.visibility = "hidden";
+      }
+      function showTelevision() {
+         overview.style.visibility = "visible";
+      }
+      let appliance = document.getElementById("homeAppliance");
+      function applianceHideIcon() {
+         appliance.style.visibility = "hidden";
+      }
+      function applianceShowIcon() {
+         appliance.style.visibility = "visible";
+      }
+      function validForm(){
+         let firstName = document.myForm.firstName.value;
+         let lastName = document.myForm.lastName.value;
+         if(firstName == null || firstName == ""){
+            document.getElementById("firstName").innerHTML = "Please enter your first name.";
+            document.getElementById("firstName").style.color= "red";
+            document.getElementById("firstName").style.fontSize = "14px";
+            return false;
+         } else if(lastName == null || lastName == ""){
+            document.getElementById("lastName").innerHTML = "Please enter your last name.";
+            document.getElementById("lastName").style.color = "red";
+            document.getElementById("lastName").style.fontSize = "14px"
+            return false;
+         }
+      }
+   </script>
+</body>
+
+</html>

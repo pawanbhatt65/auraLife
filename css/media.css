@@ -1,0 +1,474 @@
+    @media(max-width: 300px){
+    /*--------login.html----------------*/
+    .form-login {
+        padding: 20px 10px;
+    }
+    .sing-another-acc ul li:nth-child(1) a {
+        padding: 7px 14px;
+    }
+    .sing-another-acc ul li:nth-child(2) a {
+        padding: 7px 14px;
+    }
+    }
+    @media(max-width: 767px){
+    /* header */
+    .nav-direction{
+    flex-direction: column-reverse;
+    }
+    .body-gap{
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+    .show-icon{
+    display: block;
+    }
+    .hide-icon{
+    display: block;
+    }
+    .header-phone{
+    flex-wrap: wrap;
+    right: -32px;
+    left: -32px;
+    bottom: -268px;
+    top: -90px;
+    grid-template-columns: 50% 50%;
+    }
+    .nav-open:hover .header-phone{
+    display: grid;
+    }
+    .nav-open .header-phone .header-smart img{
+    padding: 10px 80px;
+    }
+    .nav-open .header-phone .header-smart p{
+    text-align: center;
+    }
+    .header-tele{
+        left: -32px;
+        right: -32px;
+        top: -130px;
+        bottom: -228px;
+    }
+    .header-laptop{
+    left: -30px;
+    right: -30px;
+    top: -170px;
+    bottom: -430px;
+    grid-template-columns: 50% 50%;
+    }
+    .laptop-link .header-laptop .header-smart p{
+    text-align: center;
+    }
+    .laptop-link:hover .header-laptop{
+    display: grid;
+    }
+    .header-audio {
+    top: -210px;
+    left: -33px;
+    right: -33px;
+    bottom: -160px;
+    }
+    .au-i-d-list {
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .au-i-d-list div img{
+        display: block;
+        margin: auto;
+    }
+    .audio-icon-des-item {
+        padding-left: 40px;
+        margin-left: 0px;
+    }
+    .audio-feature .aura-audio-link span {
+    margin-left: 48px;
+    font-size: 18px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-feature .audio-tv li {
+        padding: 2px 0px;
+    }
+    .audio-tv {
+        position: absolute;
+        top: -81px;
+        left: 154px;
+        right: 21px;
+        background: #df5353;
+        z-index: 1;
+        bottom: -218px;
+    }
+    
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-feature .audio-tv li a{
+        color: #fff;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-television .overview li a{
+        color: #fff;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-frame .audio-serio li a{
+    color: #fff;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-frame .audio-serio{
+        background: #df5353;
+        top: -156px;
+        right: 20px;
+        bottom: -144px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-size .inches li a{
+    color: #fff;
+    }
+    .inches{
+        background: #df5353;
+        top: -192px;
+        bottom: -107px;
+        right: 20px;
+        left: 154px;
+    }
+    .audio-tv .hide-icon-style{
+        right: 14px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-television .aura-audio-link span{
+        margin-left: 90px;
+        font-size: 18px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-frame .aura-audio-link span {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .audio-size .aura-audio-link span {
+        margin-left: 38px;
+        font-size: 18px;
+    }
+    .audio-icon-des-item::after {
+        top: 100%;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-television .overview {
+        top: -118px;
+        left: 154px;
+        right: 21px;
+        background: #df5353;
+        bottom: -181px;
+        z-index: 1;
+    }
+    .overview .hide-icon-style{
+        right: 20px;
+    }
+    .appliances-link .header-appliances {
+        top: -250px;
+        left: -16px;
+        right: -12px;
+        padding-left: 10px;
+        bottom: -240px;
+    }
+    .appliances-link .header-appliances::before {
+        width: 100%;
+        height: 1px;
+        left: 0px;
+        right: 0px;
+        top: 94%;
+    }
+    .appliances-link .header-appliances::after {
+        top: 500px;
+        left: 0px;
+        right: 0px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .appliances-link .header-appliances .feature-tab ul li a {
+        font-size: 14px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .appliances-link .header-appliances .header-applianc-list {
+        font-size: 12px;
+    }
+    .auraNavButton{
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        font-size: 18px;
+    }
+    /* head-er */
+    .head-er-1 {
+    padding-top: 60px;
+    }
+    /* footer */
+    .footer-product {
+    text-align: center;
+    }
+    .footer-bottom{
+    flex-direction: column-reverse;
+    justify-content: center;
+    }
+    /*----------------------------------------phone.html----------------------------------*/
+    .show-icon {
+        right: 20px;
+    }
+    .search-items {
+    width: 90%;
+    margin: 30px auto;
+    }
+    .choose-item{
+    grid-template-columns: 100%;
+    grid-gap: 20px 0px;
+    margin-top: 30px;
+    }
+    .filter-box{
+    width: 100%;
+    }
+    /*---------------methods------------------*/
+    .method-type li:last-child {
+    font-size: 9px;
+    }
+
+    /*--------------------contact.html------------------------------*/
+
+    /*--------contact------------*/
+    /*------------signup.html---------------*/
+    /*-------------signUp------------------*/
+    .form-heading h3::before {
+        width: 31%;
+    }
+    .form-heading h3::after {
+        width: 33%;
+    }
+    .sigUp-form .form-heading p {
+        font-size: 14px;
+    }
+    .sigUp-form form label{
+        font-size: 14px;
+    }
+    .sigUp-form p {
+        margin-top: 14px;
+    }  
+    /*---------------login.html-----------------*/
+  /*------login and signup-------------*/
+  .log .log-in{
+      left: 0px;
+      right: 0px;
+    }
+    }
+    @media(min-width: 500px) and (max-width: 767px){
+    .header-laptop {
+    grid-template-columns: auto auto auto;
+    }
+    .laptop-link .header-laptop .header-smart {
+    padding: 10px 0px;
+    }
+    .laptop-link .header-laptop .header-smart img {
+    padding: 10px 0px;
+    }
+    .appliances-link .header-appliances::after {
+        top: 407px;
+    }
+    .audio-icon-des-item::after {
+        top: 100%;
+    }
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+    /* header */
+    #navbarTogglerDemo01 #auraNavbar li {
+    padding: 0px 5px;
+    }
+    .show-icon{
+    display: block;
+    }
+    .hide-icon{
+    display: block;
+    }
+    .header-phone{
+    right: -66px;
+    left: -66px;
+    top: -85px;
+    bottom: -690px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .nav-open:hover .header-phone {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+    }
+    .header-phone .header-smart img{
+    padding: 10px 35px;
+    }
+    .header-tele{
+    right: -60px;
+    left: -60px;
+    top: -128px;
+    bottom: -239px;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    .laptop-link:hover .header-laptop{
+    display: grid;
+    }
+    .header-laptop{
+    right: -70px;
+    left: -70px;
+    top: -170px;
+    bottom: -450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: auto auto auto;
+    }
+    .header-smart{
+    padding: 10px;
+    }
+    .header-laptop .header-smart img{
+    padding: 10px;
+    }
+    .header-audio {
+        top: -210px;
+        left: -68px;
+        right: -68px;
+        bottom: -164px;
+    }
+    .au-i-d-list {
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .audio-icon-des-item::after {
+        right: 0px;
+    }
+    .appliances-link .header-appliances {
+        bottom: -612px;
+        top: -252px;
+        left: -68px;
+        right: -68px;
+    }
+    .appliances-link .header-appliances::before {
+        top: 45%;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 1px;
+    }
+    .appliances-link .header-appliances::after {
+        top: 442px;
+        left: 0px;
+        right: 0px;
+    }
+    .hide-icon-style{
+        display: none;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-television .overview {
+        top: -54px;
+    }
+    .header-smart p{
+    text-align: center;
+    }
+    .footer-product {
+    text-align: start;
+    display: grid;
+    justify-content: center;
+    }
+    /*-------------------------phone.html----------------------------*/
+    /*---------------choose item-------------------*/
+    .choose-item{
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    }
+    /*--------------methods---------------*/
+    .method-type li:last-child {
+    font-size: 10px;
+    }
+}
+    @media(min-width: 992px) and (max-width: 1199px){
+    /* header */
+    #navbarTogglerDemo01 #auraNavbar li {
+    padding: 0px 5px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .nav-item a {
+        font-size: 13px;
+    }
+    .laptop-link:hover .header-laptop{
+    display: grid;
+    }
+    .header-laptop{
+    right: -300px;
+    left: -240px;
+    top: 55px;
+    bottom: -450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    }
+    .laptop-link .header-laptop .header-smart img{
+    padding: 20px 30px;
+    }
+    .laptop-link .header-laptop .header-smart p{
+    text-align: center;
+    }
+    .header-phone{
+    right: -634px;
+    left: -40px;
+    }
+    .header-audio {
+        left: -486px;
+        right: -486px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-television .aura-audio-link span {
+        margin-left: 116px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-television .overview {
+        top: -54px;
+    }
+    #navbarTogglerDemo01 #auraNavbar .audio-link .header-audio .audio-icon-des .audio-icon-des-item .audio-frame .audio-serio {
+        top: -85px;
+    }
+    .audio-feature .aura-audio-link span {
+        margin-left: 80px;
+    }
+    .inches {
+        top: -128px;
+    }
+    .appliances-link .header-appliances {
+        left: -550px;
+    right: -344px;
+        padding: 30px 0px 30px 56px;
+    }
+    .appliances-link .header-appliances::after {
+        top: 23%;
+        left: 675px;
+        width: 25%;
+    }
+    .footer-product {
+    text-align: start;
+    }
+    /*-------------------------phone.html----------------------------*/
+    /*---------------choose item-------------------*/
+    .choose-item{
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    }
+    /*--------------methods---------------*/
+    .method-type li:last-child {
+    font-size: 10px;
+    }
+    }
+    @media(min-width: 1200px) and (max-width: 1399px){
+        .appliances-link .header-appliances{
+            left: -575px;
+            right: -642px;
+        }
+        .appliances-link .header-appliances::before{
+            left: 47%;
+        }
+        .appliances-link .header-appliances::after{
+            left: 655px;
+        }
+    .audio-link .header-audio{
+        left: -512px;
+        right: -796px;
+        bottom: -470px;
+    }  
+      /*---------------login.html-----------------*/
+    /*------login and signup-------------*/
+    .log .log-in{
+        left: 0px;
+        right: 0px;
+    }
+    }
