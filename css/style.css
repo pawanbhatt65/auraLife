@@ -654,6 +654,13 @@
     font-size: 20px;
     color: #000;
     }
+    .phoneSlider{
+    width: 100%;
+    display: none;
+    }
+    .phoneSlider.sliderBlock{
+    display: block;
+    }
     .phone-details{
     text-align: center;
     }
@@ -672,7 +679,77 @@
     color: #6eb974;
     font-size: 15px;
     }
+    .arrow{
+    font-size: 90px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    }
+    .next{
+    right: 20px;
+    }
+    .prev{
+    left: 20px;
+    }
     /* television */
+    .teleSlider{
+    width: 100%;
+    display: none;
+    }
+    .teleSlider.teleBlock{
+    display: block;
+    }
+    .prevTele{
+    left: 20px;
+    }
+    .nextTele{
+    right: 20px;
+    }
+    /* laplop & tablets */
+    .tabSlider{
+    width: 100%;
+    display: none;
+    }
+    .tabSlider.tabBlock{
+    display: block;
+    }
+    .prevTab{
+    left: 20px;
+    }
+    .nextTab{
+    right: 20px;
+    }
+    /* audio */
+    .audioSlider{
+    width: 100%;
+    display: none;
+    }
+    .audioSlider.audioBlock{
+    display: block;
+    }
+    .prevAudio{
+    left: 20px;
+    }
+    .nextAudio{
+    right: 20px;
+    }
+    /* home appliance */
+    .appliance{
+    width: 100%;
+    display: none;
+    }
+    .appliance.appliance-block{
+    display: block;
+    }
+    .prevAppliance{
+    left: 20px;
+    }
+    .nextAppliance{
+    right: 20px;
+    }
     /* smart life */
     .smart-life{
     margin-bottom: 60px;
@@ -681,9 +758,20 @@
     color: #000;
     height: 2px;
     }
-    /* footer */
-    .footer-product{
+    .smartLife{
+    width: 100%;
+    display: none;
     }
+    .smartLife.smartLifeBlock{
+    display: block;
+    }
+    .prevSmartLife{
+    left: 20px;
+    }
+    .nextSmartLife{
+    right: 20px;
+    }
+    /* footer */
     .footer-product ul{
     padding-left: 0px;
     margin-bottom: 0px;
@@ -694,9 +782,6 @@
     }
     .footer-product ul li a:hover{
     color: rgb(37, 20, 189);
-    }
-    .call{
-
     }
     .call .footer-pro-1{
         padding-left: 0px;

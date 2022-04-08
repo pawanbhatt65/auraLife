@@ -190,6 +190,10 @@
     .head-er-1 {
     padding-top: 60px;
     }
+    /* smartphones */
+    .arrow{
+    display: none;
+    }
     /* footer */
     .footer-product {
     text-align: center;
