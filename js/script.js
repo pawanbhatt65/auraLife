@@ -2,6 +2,9 @@
 let slides = document.querySelectorAll(".phoneSlider");
 let prevBtn = document.querySelector(".prev");
 let nextBtn = document.querySelector(".next");
+let phoneRight = document.querySelector(".rightPhone");
+let phoneLeft = document.querySelector(".leftPhone");
+// let phoneDrag = false;
 let currentPhone = 0;
 prevBtn.onclick = function(){
     prev();
@@ -9,6 +12,22 @@ prevBtn.onclick = function(){
 nextBtn.onclick = function(){
     next();
 }
+document.addEventListener("mousedown", function(){
+    drag = false;
+});
+document.addEventListener("mousemove", function(){
+    drag = true;
+});
+phoneLeft.addEventListener("mouseup", function(){
+    if(drag){
+        prev();
+    }
+});
+phoneRight.addEventListener("mouseup", function(){
+    if(drag){
+        next();
+    }
+});
 function prev(){
     if(currentPhone == 0){
         currentPhone = slides.length-1;
@@ -32,6 +51,9 @@ function next(){
 let teleSlides = document.querySelectorAll(".teleSlider");
 let telePrev = document.querySelector(".prevTele");
 let teleNext = document.querySelector(".nextTele");
+let televisionLeft = document.querySelector(".leftTelevision");
+let televisionRight = document.querySelector(".rightTelevision");
+let televisionDrag = false;
 let currentTele = 0;
 telePrev.onclick = function(){
     prevTelevision();
@@ -39,6 +61,22 @@ telePrev.onclick = function(){
 teleNext.onclick = function(){
     nextTelevision();
 }
+document.addEventListener("mousedown", function(){
+    drag = false;
+});
+document.addEventListener("mousemove", function(){
+    drag = true;
+});
+televisionLeft.addEventListener("mouseup", function(){
+    if(drag){
+        prevTelevision();
+    }
+});
+televisionRight.addEventListener("mouseup", function(){
+    if(drag){
+        nextTelevision();
+    }
+});
 function prevTelevision(){
     if(currentTele == 0){
         currentTele = teleSlides.length-1;
@@ -62,6 +100,9 @@ function nextTelevision(){
 let tabSliders = document.querySelectorAll(".tabSlider");
 let tabPrev = document.querySelector(".prevTab");
 let tabNext = document.querySelector(".nextTab");
+let tabLeft = document.querySelector(".leftTab");
+let tabRight = document.querySelector(".rightTab");
+let tabDrag = false;
 let currentTab = 0;
 tabPrev.onclick = function(){
     prevTab();
@@ -69,6 +110,22 @@ tabPrev.onclick = function(){
 tabNext.onclick = function(){
     nextTab();
 }
+document.addEventListener("mousedown", function(){
+    drag = false;
+});
+document.addEventListener("mousemove", function(){
+    drag = true;
+});
+tabLeft.addEventListener("mouseup", function(){
+    if(drag){
+        prevTab();
+    }
+});
+tabRight.addEventListener("mouseup", function(){
+    if(drag){
+        nextTab();
+    }
+});
 function prevTab(){
     if(currentTab == 0){
         currentTab = tabSliders.length-1;
@@ -92,6 +149,9 @@ function nextTab(){
 let audioSliders = document.querySelectorAll(".audioSlider");
 let audioPrev = document.querySelector(".prevAudio");
 let audioNext = document.querySelector(".nextAudio");
+let audioLeft = document.querySelector(".leftAudio");
+let audioRight = document.querySelector(".rightAudio");
+let audioDrag = false;
 let currentAudio = 0;
 audioPrev.onclick = function(){
     prevAudio();
@@ -99,6 +159,22 @@ audioPrev.onclick = function(){
 audioNext.onclick = function(){
     nextAudio();
 }
+document.addEventListener("mousedown", function(){
+    drag = false;
+});
+document.addEventListener("mousemove", function(){
+    drag = true;
+});
+audioLeft.addEventListener("mouseup", function(){
+    if(drag){
+        prevAudio();
+    }
+});
+audioRight.addEventListener("mouseup", function(){
+    if(drag){
+        nextAudio();
+    }
+});
 function prevAudio(){
     if(currentAudio == 0){
         currentAudio = audioSliders.length-1;
@@ -122,6 +198,9 @@ function nextAudio(){
 let applianceSlider = document.querySelectorAll(".appliance");
 let appliancePrev = document.querySelector(".prevAppliance");
 let applianceNext = document.querySelector(".nextAppliance");
+let leftAppliance = document.querySelector(".leftAppliance");
+let rightAppliance = document.querySelector(".rightAppliance");
+let dragAppliance = false;
 let currentAppliance = 0;
 appliancePrev.onclick = function(){
     prevAppliance();
@@ -129,6 +208,22 @@ appliancePrev.onclick = function(){
 applianceNext.onclick = function(){
     nextAppliance();
 }
+document.addEventListener("mousedown", function(){
+    drag = false;
+});
+document.addEventListener("mousemove", function(){
+    drag = true;
+});
+leftAppliance.addEventListener("mouseup", function(){
+    if(drag){
+        prevAppliance();
+    }
+});
+rightAppliance.addEventListener("mouseup", function(){
+    if(drag){
+        nextAppliance();
+    }
+});
 function prevAppliance(){
     if(currentAppliance == 0){
         currentAppliance = applianceSlider.length-1;
@@ -152,6 +247,9 @@ function nextAppliance(){
 let smartSlider = document.querySelectorAll(".smartLife");
 let smartPrev = document.querySelector(".prevSmartLife");
 let smartNext = document.querySelector(".nextSmartLife");
+let smartLeft = document.querySelector(".leftSmartLife");
+let smartRight = document.querySelector(".rightSmartLife");
+let smartDrag = false;
 let currentSmart = 0;
 smartPrev.onclick = function(){
     prevSmart();
@@ -159,6 +257,22 @@ smartPrev.onclick = function(){
 smartNext.onclick = function(){
     nextSmart();
 }
+document.addEventListener("mousedown", function(){
+    drag = false;
+});
+document.addEventListener("mousemove", function(){
+    drag = true;
+});
+smartLeft.addEventListener("mouseup", function(){
+    if(drag){
+        prevSmart();
+    }
+});
+smartRight.addEventListener("mouseup", function(){
+    if(drag){
+        nextSmart();
+    }
+});
 function prevSmart(){
     if(currentSmart == 0){
         currentSmart = smartSlider.length-1;

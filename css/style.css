@@ -1,10 +1,10 @@
 @font-face{
     font-family: lato;
-    src: url(../fonts&icon/fonts/Lato.ttf);
+    src: url(../fonts_icon/fonts/Lato.ttf);
     }
     @font-face{
     font-family: poppins;
-    src: url(../fonts&icon/fonts/Poppins.ttf);
+    src: url(../fonts_icon/fonts/Poppins.ttf);
     }
     *{
     margin: 0px;
@@ -686,13 +686,28 @@
     border: none;
     outline: none;
     position: absolute;
-    top: 50%;
+    top: 35%;
     }
     .next{
     right: 20px;
     }
     .prev{
     left: 20px;
+    }
+    .leftPhone{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    }
+    .rightPhone{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
     }
     /* television */
     .teleSlider{
@@ -708,6 +723,20 @@
     .nextTele{
     right: 20px;
     }
+    .leftTelevision{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    }
+    .rightTelevision{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    }
     /* laplop & tablets */
     .tabSlider{
     width: 100%;
@@ -721,6 +750,20 @@
     }
     .nextTab{
     right: 20px;
+    }
+    .leftTab{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    }
+    .rightTab{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
     }
     /* audio */
     .audioSlider{
@@ -736,6 +779,20 @@
     .nextAudio{
     right: 20px;
     }
+    .leftAudio{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    }
+    .rightAudio{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    }
     /* home appliance */
     .appliance{
     width: 100%;
@@ -749,6 +806,20 @@
     }
     .nextAppliance{
     right: 20px;
+    }
+    .leftAppliance{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    }
+    .rightAppliance{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
     }
     /* smart life */
     .smart-life{
@@ -770,6 +841,20 @@
     }
     .nextSmartLife{
     right: 20px;
+    }
+    .leftSmartLife{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    }
+    .rightSmartLife{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
     }
     /* footer */
     .footer-product ul{
